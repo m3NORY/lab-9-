@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Contact Manager</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+
+   <!-- Поля ввода -->
+   <widget class="QLabel" name="labelName">
+    <property name="geometry"><rect><x>20</x><y>10</y><width>40</width><height>20</height></rect></property>
+    <property name="text"><string>Имя:</string></property>
+   </widget>
+
+   <widget class="QLineEdit" name="editName">
+    <property name="geometry">
+     <rect><x>20</x><y>30</y><width>150</width><height>25</height></rect>
+    </property>
+    <property name="placeholderText">
+     <string>Name *</string>
+    </property>
+   </widget>
+
+   <widget class="QLabel" name="labelEmail">
+    <property name="geometry"><rect><x>180</x><y>10</y><width>40</width><height>20</height></rect></property>
+    <property name="text"><string>Email:</string></property>
+   </widget>
+
+   <widget class="QLineEdit" name="editEmail">
+    <property name="geometry">
+     <rect><x>180</x><y>30</y><width>150</width><height>25</height></rect>
+    </property>
+    <property name="placeholderText">
+     <string>Email</string>
+    </property>
+   </widget>
+
+   <widget class="QLabel" name="labelPhone">
+    <property name="geometry"><rect><x>340</x><y>10</y><width>40</width><height>20</height></rect></property>
+    <property name="text"><string>Телефон:</string></property>
+   </widget>
+
+   <widget class="QLineEdit" name="editPhone">
+    <property name="geometry">
+     <rect><x>340</x><y>30</y><width>150</width><height>25</height></rect>
+    </property>
+    <property name="placeholderText">
+     <string>Phone</string>
+    </property>
+   </widget>
+
+   <widget class="QLabel" name="labelAddress">
+    <property name="geometry"><rect><x>20</x><y>65</y><width>40</width><height>20</height></rect></property>
+    <property name="text"><string>Адрес:</string></property>
+   </widget>
+
+   <widget class="QLineEdit" name="editAddress">
+    <property name="geometry">
+     <rect><x>20</x><y>85</y><width>250</width><height>25</height></rect>
+    </property>
+    <property name="placeholderText">
+     <string>Address</string>
+    </property>
+   </widget>
+
+   <widget class="QLabel" name="labelCategory">
+    <property name="geometry"><rect><x>280</x><y>65</y><width>60</width><height>20</height></rect></property>
+    <property name="text"><string>Категория:</string></property>
+   </widget>
+
+   <widget class="QComboBox" name="editCategory">
+    <property name="geometry">
+     <rect><x>280</x><y>85</y><width>120</width><height>25</height></rect>
+    </property>
+    <item><property name="text"><string>friend</string></property></item>
+    <item><property name="text"><string>family</string></property></item>
+    <item><property name="text"><string>work</string></property></item>
+   </widget>
+
+   <widget class="QPushButton" name="btnAdd">
+    <property name="geometry">
+     <rect><x>420</x><y>85</y><width>100</width><height>25</height></rect>
+    </property>
+    <property name="text"><string>Add</string></property>
+   </widget>
+
+   <widget class="QPushButton" name="btnUpdate">
+    <property name="geometry">
+     <rect><x>530</x><y>85</y><width>100</width><height>25</height></rect>
+    </property>
+    <property name="text"><string>Update</string></property>
+   </widget>
+
+   <widget class="QPushButton" name="btnDelete">
+    <property name="geometry">
+     <rect><x>640</x><y>85</y><width>100</width><height>25</height></rect>
+    </property>
+    <property name="text"><string>Delete</string></property>
+   </widget>
+
+   <widget class="QPushButton" name="btnLoad">
+    <property name="geometry">
+     <rect><x>20</x><y>130</y><width>100</width><height>30</height></rect>
+    </property>
+    <property name="text"><string>Load</string></property>
+   </widget>
+
+   <widget class="QLineEdit" name="searchLineEdit">
+    <property name="geometry">
+     <rect><x>140</x><y>130</y><width>250</width><height>30</height></rect>
+    </property>
+    <property name="placeholderText">
+     <string> Search by name or email</string>
+    </property>
+   </widget>
+
+   <widget class="QComboBox" name="categoryCombo">
+    <property name="geometry">
+     <rect><x>410</x><y>130</y><width>120</width><height>30</height></rect>
+    </property>
+    <item><property name="text"><string>All</string></property></item>
+    <item><property name="text"><string>friend</string></property></item>
+    <item><property name="text"><string>family</string></property></item>
+    <item><property name="text"><string>work</string></property></item>
+   </widget>
+
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect><x>20</x><y>180</y><width>750</width><height>380</height></rect>
+    </property>
+   </widget>
+
+  </widget>
+
+  <widget class="QStatusBar" name="statusBar"/>
+
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
